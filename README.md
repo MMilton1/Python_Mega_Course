@@ -55,3 +55,11 @@ To explore any project in this repository:
 1. Clone the repository:
    ```bash
    git clone https://github.com/mmilton1/python-mega-course-projects.git
+2. Navigate to the project folder:
+  ```bash
+  cd project-folder-name
+
+3. Install the required dependencies:
+  ```bash
+  cd project-folder-name
+
