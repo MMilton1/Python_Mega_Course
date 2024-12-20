@@ -1,55 +1,16 @@
-# def greet(name):
-#     print("Hello, " + name)
-#     print("Lets learn Python Functions")
-#
-#
-# greet("Murray")
-#
-#
-# # Arguments
-# def saySomething(age, current_year,  first_name, last_name):
-#     date_of_birth = int(current_year - age)
-#     print(f"Hello, {first_name } {last_name}! Your year of birth is {date_of_birth}")
+def save_user(**user_data):
+    for key, value in user_data.items():
+        print(value)
 
+save_user(first_name="John", last_name="Smith", email="<john.smith@uyuu.com>", password="<PASSWORD>")
 
-# saySomething(33, 2024, "Murray", "Murray")
-
-# Types of Functions
-
-# 1 Functions that perform a task
-
-
-# 2 Functions that return a value
-
-# def get_age(age):
-#     return f"You are {age} years old"
-#
-# user_age = get_age(33)
-# file = open("content.txt", "w")
-# file.write(user_age)
-
-
-
-#
-# def increment(number, by=4):
-#     return number + by
-#
-# print(increment(2))
-#
-# # xargs vs xxargs
-#
-# def multiply(x, y):
-#     return x * y
-
-
-
-
-
-def divide(*numbers):
-    total = 1
+def fizz_buzz(*numbers):
     for number in numbers:
-        total /= number
-    return total
+        if number % 3 == 0 and number % 5 == 0:
+            print("FizzBuzz")
+        elif number % 3 == 0:
+            print("Fizz")
+        else:
+            print("Buzz")
 
-
-print(divide(2,3,2,5))
+fizz_buzz(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15)
