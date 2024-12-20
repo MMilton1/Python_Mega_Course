@@ -21,10 +21,9 @@ while True:
     if user_input == 'y':
         user_roll_count += 1
         user_roll_count = int(input("How many dice do you roll?"))
-        # Get the two random die rolls
-        die_1 = random.randint(1, 6)
-        die_2 = random.randint(1, 6)
         for roll in range(0,user_roll_count):
+            die_1 = random.randint(1, 6)
+            die_2 = random.randint(1, 6)
             print(f"({die_1},{die_2})")
     elif user_input == 'n':
         print("Thanks for playing.")
